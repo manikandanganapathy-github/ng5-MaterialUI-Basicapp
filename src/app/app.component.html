@@ -10,7 +10,7 @@
 
 <mat-card>
     <mat-form-field>
-        <input matInput [(ngModel)]="userAnswer" placeholder="Who has the best dev tutorials?">
+        <input matInput (keyup)="onEnterKey($event)" [(ngModel)]="userAnswer" placeholder="Who is the best programmer?">
     </mat-form-field>
 
     <br>

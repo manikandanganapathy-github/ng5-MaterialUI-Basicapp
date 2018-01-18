@@ -11,6 +11,11 @@ export class AppComponent {
   answerDisplay:  '';
   showSpinner: boolean;
 
+  onEnterKey(event: any): void {
+    if (event.keyCode === 13) {
+      this.showAnswer();
+    }
+  }
   showAnswer() {
     this.showSpinner = true;
 

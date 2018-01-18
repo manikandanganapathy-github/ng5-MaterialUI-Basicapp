@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userAnswer: string = '';
-  answerDisplay: string = '';
-  showSpinner: boolean = false;
+  userAnswer: '';
+  answerDisplay:  '';
+  showSpinner: boolean;
 
   showAnswer() {
     this.showSpinner = true;
